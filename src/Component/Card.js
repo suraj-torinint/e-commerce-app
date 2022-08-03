@@ -31,6 +31,12 @@ const Card = (props) => {
                             <a href="#" className="btn btn-default">
                                 <i class="bi bi-heart-fill danger"></i>
                             </a>
+                            <a href="#" className="btn btn-default mx-3">
+                                <i className="bi bi-cart"></i>
+                            </a>
+                            <a href="#" className="btn btn-default">
+                                <i class="bi bi-heart-fill danger"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
