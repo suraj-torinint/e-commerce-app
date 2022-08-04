@@ -10,7 +10,11 @@ const Card = (props) => {
         setIsActive("d-none");
     };
 
-    const handleCardDetail = () => {
+    let width = props.width;
+    let height = props.height;
+
+    const handleCardDetail = (e) => {
+        e.preventDefault();
         console.log("show more clicked");
         setDetail(
             <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -55,7 +59,7 @@ const Card = (props) => {
                         </button>
                     </div>
                     <div className="text-center">
-                        <img src={props.image} className="card-img-top img-thumbnail" style={{ width: "200px", height: "200px" }} alt="..." />
+                        <img src={props.image} className="card-img-top img-thumbnail" style={{ width: width, height: height }} alt="..." />
                     </div>
                     <div className="card-body">
                         <div className="px-1 row">
