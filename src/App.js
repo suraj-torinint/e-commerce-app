@@ -6,7 +6,7 @@ function App() {
     return (
         <div className="row">
             {productData.map((data) => (
-                <Card image={data.image} title={data.title} desc={data.desc} price={data.price} width={data.width} height={data.height} />
+                <Card key={data.id} image={data.image} title={data.title} desc={data.desc} price={data.price} width={data.width} height={data.height} />
             ))}
             
         </div>
