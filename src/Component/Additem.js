@@ -49,9 +49,12 @@ const AddItem = () => {
             width: width + "px",
             height: height + "px",
         };
+
         productData.push(product);
+        let data = JSON.stringify(product);
+        console.log(data);
         console.log(product);
-        console.log(productData);
+        console.log(productData.length);
         setId("");
         setTitle("");
         setPrice("");
