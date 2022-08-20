@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import productData from "../productData";
 
-const AddItem = () => {
+const AddItem = (props) => {
     const [id, setId] = useState("");
     const [title, setTitle] = useState("");
     const [price, setPrice] = useState("");
@@ -50,7 +50,10 @@ const AddItem = () => {
             height: height + "px",
         };
 
-        productData.push(product);
+        // sending data to parent component
+        // productData.push(product);
+        props.sendData(product);
+
         let data = JSON.stringify(product);
         console.log(data);
         console.log(product);
